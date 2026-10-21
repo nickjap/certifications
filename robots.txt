@@ -1,28 +1,81 @@
-# Block standard search engine indexing
+# --------------------------------------------------
+# 1. Global Rule: Blocks all standard search engine indexing
+# --------------------------------------------------
 User-agent: *
 Disallow: /
 
-# Explicitly block AI training models and web scrapers
+# --------------------------------------------------
+# 2. Comprehensive AI & LLM Crawler Blocklist (Updated Oct 2026)
+# --------------------------------------------------
+
+# OpenAI Fleet
 User-agent: GPTBot
 Disallow: /
-
 User-agent: ChatGPT-User
 Disallow: /
-
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Disallow: /
 
-User-agent: Anthropic-ai
+# Anthropic / Claude Fleet
+User-agent: ClaudeBot
 Disallow: /
-
+User-agent: anthropic-ai
+Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
+# Google AI Core (Gemini / Vertex)
+User-agent: Google-Extended
+Disallow: /
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+# Apple Intelligence Core
+User-agent: Applebot-Extended
+Disallow: /
+
+# xAI (Grok) Fleet
+User-agent: GrokAgent
+Disallow: /
+User-agent: xAI-Grok
+Disallow: /
+
+# Meta AI (LLaMA Training & Indexing)
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-WebIndexer
+Disallow: /
+User-agent: Reflectionbot
+Disallow: /
+
+# Perplexity & Search Assistants
 User-agent: PerplexityBot
 Disallow: /
-
-User-agent: CCBot
+User-agent: Perplexity-User
 Disallow: /
 
-User-agent: Omgilibot
+# Mistral AI Fleet
+User-agent: MistralAI-Training
+Disallow: /
+User-agent: MistralAI-Index
+Disallow: /
+
+# ByteDance Core (TikTok / Douyin AI Engines)
+User-agent: Bytespider
+Disallow: /
+
+# Cohere Platform
+User-agent: cohere-ai
+Disallow: /
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# Major Common Crawl Datasets & Scrapers
+User-agent: CCBot
+Disallow: /
+User-agent: omgili
+Disallow: /
+User-agent: omgilibot
+Disallow: /
+User-agent: Diffbot
 Disallow: /
