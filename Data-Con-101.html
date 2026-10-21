@@ -51,18 +51,18 @@
         }
         .viewer-container {
             width: 100%;
-            aspect-ratio: 16 / 11; /* EDITED: Forces the element box to match the proportions of the PDF to eliminate Edge scrollbars */
-            max-height: 640px;
+            height: 520px; /* EDITED: Reduced to perfectly fit the core document without extra space in Chrome */
             border-radius: 8px;
-            overflow: hidden;
+            overflow: hidden; /* Foribly hides container level overflows */
             border: 1px solid #e5e7eb;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
         }
         iframe {
             width: 100%;
             height: 100%;
             border: none;
             display: block;
+            overflow: hidden; /* EDITED: Instructs standard engines to suppress standard document overflows */
         }
         .cert-description {
             padding-top: 10px;
@@ -78,14 +78,15 @@
             font-size: 16px;
             font-weight: bold;
             color: #2e2e2e;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            margin-top: 5px; /* EDITED: Tightens the margin space between heading and text */
         }
         .section-heading {
             font-size: 18px;
             color: #1b1b1b;
-            margin-top: 25px;
-            margin-bottom: 8px;
-            border-bottom: none; /* EDITED: Removed the dashed border-bottom rule causing the extra line */
+            margin-top: 15px; /* EDITED: Tightens up space above the description block */
+            margin-bottom: 5px;
+            border-bottom: none; 
             padding-bottom: 4px;
         }
         .body-text {
@@ -102,12 +103,13 @@
         <h1>Salesforce Certified Data 360 Consultant</h1>
         <div class="meta">
             <span class="badge">Issued By: Salesforce</span>
-            Certification Details: <a href="https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101" target="_blank">Trailhead Academy - Salesforce Certified Data 360 Consultant</a>
+            Certification Details: <a href="https://salesforce.com" target="_blank">Trailhead Academy - Salesforce Certified Data 360 Consultant</a>
         </div>
     </div>
 
     <div class="viewer-container">
-        <iframe src="Cert8100899_Data360Consultant_20260904.pdf#toolbar=0"></iframe>
+        <!-- EDITED: Added scrolling="no" property directly to the tag to prevent Edge from generating scrollbars -->
+        <iframe src="Cert8100899_Data360Consultant_20260904.pdf#toolbar=0" scrolling="no"></iframe>
     </div>
 
     <div class="cert-description">
