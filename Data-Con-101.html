@@ -51,22 +51,46 @@
         }
         .viewer-container {
             width: 100%;
-            height: 0;
-            padding-bottom: 70.71%; /* EDITED: Forces a true landscape ISO A4/Letter aspect ratio mathematically */
-            position: relative;
-            border-radius: 8px;
+            border-radius: 8px 8px 0 0; 
             overflow: hidden;
             border: 1px solid #e5e7eb;
-            margin-bottom: 25px;
-            background: #ffffff; /* Sets a clean background to eliminate dark margins in Chrome */
+            border-bottom: none; 
+            background: #ffffff;
+            box-sizing: border-box;
         }
-        .viewer-container object {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .cert-img {
             width: 100%;
-            height: 100%;
-            border: none;
+            height: auto;
+            display: block;
+        }
+        .verification-bar {
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 15px 20px;
+            border-radius: 0 0 8px 8px; 
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .verification-text {
+            font-size: 14px;
+            color: #4b5563;
+        }
+        .download-btn {
+            background-color: #0176d3;
+            color: #ffffff !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: background-color 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #015a9e;
         }
         .cert-description {
             padding-top: 10px;
@@ -112,10 +136,15 @@
     </div>
 
     <div class="viewer-container">
-        <!-- EDITED: Replaced the standard iframe tag with a layout-strict object viewer element -->
-        <object data="Cert8100899_Data360Consultant_20260904.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
-            <p>Your browser does not support embedding PDFs. <a href="Cert8100899_Data360Consultant_20260904.pdf">Click here to download it directly.</a></p>
-        </object>
+        <!-- EDITED: Updated to match your exact file name syntax -->
+        <img src="Cert8100899_Data360Consultant_20260904.png" alt="Salesforce Certified Data 360 Consultant Certificate" class="cert-img">
+    </div>
+
+    <div class="verification-bar">
+        <div class="verification-text">
+            Need to inspect credential metadata? Security-signed file is available for direct audit.
+        </div>
+        <a href="Cert8100899_Data360Consultant_20260904.pdf" download class="download-btn">Download Official PDF</a>
     </div>
 
     <div class="cert-description">
