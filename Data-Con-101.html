@@ -122,6 +122,67 @@
             color: #4b5563;
             margin-bottom: 15px;
         }
+
+        /* NEW CUSTOM STYLES ADDED BELOW */
+        .meta-badges-bar {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            color: #4b5563;
+        }
+        .meta-icon-box {
+            width: 28px;
+            height: 28px;
+            background-color: #002d62;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .meta-icon-box svg {
+            width: 16px;
+            height: 16px;
+            fill: #ffffff;
+        }
+        .meta-label {
+            font-weight: bold;
+            color: #002d62;
+        }
+        .skills-section {
+            margin-top: 30px;
+        }
+        .skills-heading {
+            font-size: 24px;
+            color: #002d62;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-pill {
+            background-color: #eff6ff;
+            color: #0176d3;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #dbeafe;
+        }
     </style>
 </head>
 <body>
@@ -131,12 +192,11 @@
         <h1>Salesforce Certified Data 360 Consultant</h1>
         <div class="meta">
             <span class="badge">Issued By: Salesforce</span>
-            Certification Details: <a href="https://salesforce.com" target="_blank">Trailhead Academy - Salesforce Certified Data 360 Consultant</a>
+            Certification Details: <a href="https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101" target="_blank">Trailhead Academy - Salesforce Certified Data 360 Consultant</a>
         </div>
     </div>
 
     <div class="viewer-container">
-        <!-- EDITED: Updated to match your exact file name syntax -->
         <img src="Cert8100899_Data360Consultant_20260904.png" alt="Salesforce Certified Data 360 Consultant Certificate" class="cert-img">
     </div>
 
@@ -151,6 +211,47 @@
         <h3 class="section-heading">About this certification</h3>
         <p class="cert-summary">Certified Data 360 Consultants have experience implementing and consulting on enterprise data platforms in a customer-facing role.</p>
         <p class="body-text">The Salesforce Certified Data 360 Consultant exam is designed for customer-facing consultants experienced in designing, configuring, and implementing solutions on Data 360 and other enterprise data platforms. The Data 360 Consultant designs and applies maintainable and scalable customer business requirements and contributes to a customer’s long-term success.</p>
+    </div>
+
+    <!-- NEW CONTENT: Metadata Category Row with SVG Icons -->
+    <div class="meta-badges-bar">
+        <div class="meta-item">
+            <div class="meta-icon-box">
+                <!-- User/Consultant Icon -->
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"/></svg>
+            </div>
+            <span><span class="meta-label">Role:</span> Consultant</span>
+        </div>
+        <div class="meta-item">
+            <div class="meta-icon-box">
+                <!-- Chart/Level Icon -->
+                <svg viewBox="0 0 24 24"><path d="M5 19.23h3V11.5H5v7.73zm4.5 0h3V7.5h-3v11.73zM14 19.23h3v-14h-3v14zm4.5 0h3v-17h-3v17z"/></svg>
+            </div>
+            <span><span class="meta-label">Level:</span> Intermediate</span>
+        </div>
+        <div class="meta-item">
+            <div class="meta-icon-box">
+                <!-- Globe/Language Icon -->
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.34-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.3.8 2.51 1.38 3.56A8.03 8.03 0 0 1 5.08 16zm2.95-8H5.08a8.03 8.03 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.34-.16-2s.07-1.34.16-2h4.68c.09.66.16 1.34.16 2s-.07 1.34-.16 2zm.25 5.56c.58-1.05 1.06-2.26 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.34.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+            </div>
+            <span><span class="meta-label">Language:</span> English, Japanese, French, Spanish</span>
+        </div>
+    </div>
+
+    <!-- NEW CONTENT: Skills Matrix Pill Badges Section -->
+    <div class="skills-section">
+        <div class="skills-heading">Skills needed for this exam</div>
+        <div class="skills-grid">
+            <div class="skill-pill">Business Consulting</div>
+            <div class="skill-pill">Business Solutions</div>
+            <div class="skill-pill">Configuration Management</div>
+            <div class="skill-pill">Data Integration</div>
+            <div class="skill-pill">Data Analysis</div>
+            <div class="skill-pill">Data Management</div>
+            <div class="skill-pill">Data Science</div>
+            <div class="skill-pill">IT Automation</div>
+            <div class="skill-pill">IT Management</div>
+        </div>
     </div>
 </div>
 
