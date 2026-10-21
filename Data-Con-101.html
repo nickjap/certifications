@@ -51,18 +51,22 @@
         }
         .viewer-container {
             width: 100%;
-            height: 520px; /* EDITED: Reduced to perfectly fit the core document without extra space in Chrome */
+            height: 0;
+            padding-bottom: 70.71%; /* EDITED: Forces a true landscape ISO A4/Letter aspect ratio mathematically */
+            position: relative;
             border-radius: 8px;
-            overflow: hidden; /* Foribly hides container level overflows */
+            overflow: hidden;
             border: 1px solid #e5e7eb;
             margin-bottom: 25px;
+            background: #ffffff; /* Sets a clean background to eliminate dark margins in Chrome */
         }
-        iframe {
+        .viewer-container object {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border: none;
-            display: block;
-            overflow: hidden; /* EDITED: Instructs standard engines to suppress standard document overflows */
         }
         .cert-description {
             padding-top: 10px;
@@ -79,12 +83,12 @@
             font-weight: bold;
             color: #2e2e2e;
             margin-bottom: 15px;
-            margin-top: 5px; /* EDITED: Tightens the margin space between heading and text */
+            margin-top: 5px;
         }
         .section-heading {
             font-size: 18px;
             color: #1b1b1b;
-            margin-top: 15px; /* EDITED: Tightens up space above the description block */
+            margin-top: 15px; 
             margin-bottom: 5px;
             border-bottom: none; 
             padding-bottom: 4px;
@@ -108,8 +112,10 @@
     </div>
 
     <div class="viewer-container">
-        <!-- EDITED: Added scrolling="no" property directly to the tag to prevent Edge from generating scrollbars -->
-        <iframe src="Cert8100899_Data360Consultant_20260904.pdf#toolbar=0" scrolling="no"></iframe>
+        <!-- EDITED: Replaced the standard iframe tag with a layout-strict object viewer element -->
+        <object data="Cert8100899_Data360Consultant_20260904.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+            <p>Your browser does not support embedding PDFs. <a href="Cert8100899_Data360Consultant_20260904.pdf">Click here to download it directly.</a></p>
+        </object>
     </div>
 
     <div class="cert-description">
