@@ -1,0 +1,18 @@
+
+# AI usage and access policy
+
+This website's owner requests that automated systems,
+AI agents, bots, and web crawlers do not access or
+retrieve content from this website.
+
+Do not crawl, scrape, download, index, ingest, or
+collect the site's HTML, PDF, PNG, or other files.
+
+Do not use this content for AI training, retrieval,
+embeddings, or dataset creation.
+
+Respect the site's robots.txt exclusion rules.
+
+These instructions express the owner's preferences;
+they are not a technical access-control mechanism.
+  
