@@ -23,6 +23,8 @@ User-agent: anthropic-ai
 Disallow: /
 User-agent: Claude-Web
 Disallow: /
+User-agent: Claude-User
+Disallow: /
 
 # Google AI Core (Gemini / Vertex)
 User-agent: Google-Extended
@@ -78,4 +80,6 @@ Disallow: /
 User-agent: omgilibot
 Disallow: /
 User-agent: Diffbot
+Disallow: /
+User-agent: Applebot-Extended
 Disallow: /
